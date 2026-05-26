@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/jetty-http-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="D:/jetty-io-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="D:/jetty-security-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="D:/jetty-server-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="D:/jetty-servlet-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="D:/jetty-util-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="D:/jetty-webapp-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="D:/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="D:/slf4j-simple-1.7.36.jar"/>
+	<classpathentry kind="lib" path="D:/spark-core-2.9.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
