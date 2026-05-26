@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a0a2e;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#titulo {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position:absolute;
+    margin-bottom: 700px;
+}
+
+#container {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+}
+
+#calculadora {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#tela {
+    background-color: #000;
+    border: 2px solid #4a1a6e;
+    border-radius: 16px;
+    padding: 12px 16px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#expressao {
+    font-size: 20px;
+    color: #9a6fc0;
+    min-height: 18px;
+}
+
+#display {
+    font-size: 32px;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    word-break: break-all;
+}
+
+#erro {
+    font-size: 12px;
+    color: #f87171;
+    min-height: 16px;
+}
+
+#botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #4a1a6e;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #3a1a55;
+    color: white;
+    transition: background 0.15s;
+}
+
+.btn1 {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ff9900;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ff7b00;
+    color: white;
+    transition: background 0.15s;
+}
+
+
+.btn:hover { background-color: #4e2270; }
+.btn:active { transform: scale(0.95); }
+.btn.op  { color: #fbbf24; }
+.btn.eq  { background-color: #5b21b6; color: white; }
+.btn.eq:hover { background-color: #6d28d9; }
+.btn.fn  { color: #c084fc; }
+.btn.clr { color: #f87171; }
+.btn.hc  { color: #fd3052; font-size: 13px; }
+
+#historico-panel {
+    width: 250px;
+    background-color: #0f0520;
+    border: 1px solid #4a1a6e;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#historico-titulo {
+    color: #9a6fc0;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#historico-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    overflow-y: auto;
+    max-height: 380px;
+}
+
+.hist-item {
+    background-color: #1a0a2e;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    color: white;
+    border-left: 2px solid #7c3aed;
+}
+
+.hist-item span {
+    display: block;
+    color: #ff7300;
+    font-size: 21px;
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#modal-box {
+    background: #1a0a2e;
+    border: 1px solid #7c3aed;
+    border-radius: 12px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 280px;
+    text-align: center;
+}
+
+#modal-titulo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #c084fc;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#modal-msg {
+    font-size: 14px;
+    color: #e2d4f0;
+}
+
+#modal-botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+#modal-cancelar {
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: 1px solid #4a1a6e;
+    background: #2a1040;
+    color: #c084fc;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+#modal-cancelar:hover { background: #3a1a55; }
+
+#modal-confirmar {
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #7c3aed;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+#modal-confirmar:hover { background: #6d28d9; }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+
+    <div id="container">
+        <div id="calculadora">
+            <div id="tela">
+                <div id="expressao"></div>
+                <div id="display">0</div>
+                <div id="erro"></div>
+            </div>
+            <div id="botoes">
+                <button class="btn num">7</button>
+                <button class="btn num">8</button>
+                <button class="btn num">9</button>
+                <button class="btn1 op">/</button>
+
+                <button class="btn num">4</button>
+                <button class="btn num">5</button>
+                <button class="btn num">6</button>
+                <button class="btn1 op">*</button>
+
+                <button class="btn num">1</button>
+                <button class="btn num">2</button>
+                <button class="btn num">3</button>
+                <button class="btn1 op">-</button>
+
+                <button class="btn num">0</button>
+                <button class="btn num">.</button>
+                <button class="btn eq">=</button>
+                <button class="btn1 op">+</button>
+
+                <button class="btn clr">C</button>
+                <button class="btn1 fn">√</button>
+                <button class="btn1 fn">sin</button>
+                <button class="btn1 fn">cos</button>
+
+                <button class="btn1 fn">tan</button>
+                <button class="btn1 op">(</button>
+                <button class="btn1 op">)</button>
+                <button class="btn1 op">^</button>
+
+                <button class="btn hc">HC</button>
+            </div>
+        </div>
+        <div id="historico-panel">
+            <div id="historico-titulo">Histórico</div>
+            <div id="historico-lista"></div>
+        </div>
+    </div>
+
+<h1 id="titulo">TRABALHO PROG 3</h1>
+
+<!-- MODAL DE CONFIRMAÇÃO -->
+<div id="modal-overlay" style="display:none">
+    <div id="modal-box">
+        <div id="modal-titulo">Limpar Histórico</div>
+        <div id="modal-msg">Deseja apagar todo o histórico?</div>
+        <div id="modal-botoes">
+            <button id="modal-cancelar">Cancelar</button>
+            <button id="modal-confirmar">Apagar</button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
